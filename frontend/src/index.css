@@ -1,0 +1,307 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Auth pages */
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+}
+
+.auth-box {
+  width: 100%;
+  max-width: 420px;
+  padding: 36px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+}
+
+.auth-box h2 {
+  margin-bottom: 24px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 16px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #4a90e2;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn-primary {
+  background-color: #4a90e2;
+  color: #fff;
+  width: 100%;
+}
+
+.btn-primary:hover {
+  background-color: #357abd;
+}
+
+.btn-danger {
+  background-color: #e74c3c;
+  color: #fff;
+}
+
+.btn-danger:hover {
+  background-color: #c0392b;
+}
+
+.btn-secondary {
+  background-color: #7f8c8d;
+  color: #fff;
+}
+
+.btn-secondary:hover {
+  background-color: #636e72;
+}
+
+.btn-success {
+  background-color: #27ae60;
+  color: #fff;
+}
+
+.btn-success:hover {
+  background-color: #219a52;
+}
+
+.btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Alerts */
+.alert {
+  padding: 12px 16px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.alert-error {
+  background-color: #fdecea;
+  color: #c0392b;
+  border: 1px solid #e74c3c;
+}
+
+.alert-success {
+  background-color: #eafaf1;
+  color: #1e8449;
+  border: 1px solid #27ae60;
+}
+
+/* Dashboard */
+.dashboard-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 28px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-header h1 {
+  font-size: 22px;
+}
+
+.user-info {
+  font-size: 14px;
+  color: #555;
+}
+
+.user-info span {
+  font-weight: 600;
+  color: #333;
+}
+
+/* Task Form */
+.task-form-box {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 24px;
+  margin-bottom: 28px;
+}
+
+.task-form-box h3 {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.task-form-row {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+/* Task list */
+.tasks-section h3 {
+  margin-bottom: 16px;
+  font-size: 16px;
+}
+
+.task-card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.task-card-left h4 {
+  font-size: 15px;
+  margin-bottom: 4px;
+}
+
+.task-card-left p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.task-meta {
+  font-size: 12px;
+  color: #999;
+}
+
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-right: 8px;
+}
+
+.badge-pending {
+  background: #fff3cd;
+  color: #856404;
+}
+
+.badge-completed {
+  background: #d4edda;
+  color: #155724;
+}
+
+.task-card-actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.task-card-actions .btn {
+  padding: 6px 14px;
+  font-size: 13px;
+}
+
+/* Edit modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: #fff;
+  border-radius: 8px;
+  padding: 28px;
+  width: 100%;
+  max-width: 480px;
+}
+
+.modal-box h3 {
+  margin-bottom: 16px;
+}
+
+.auth-link {
+  text-align: center;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.auth-link a {
+  color: #4a90e2;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.empty-state {
+  text-align: center;
+  padding: 40px;
+  color: #999;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .task-card {
+    flex-direction: column;
+    gap: 12px;
+  }
+  .dashboard-header {
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-start;
+  }
+}
